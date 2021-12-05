@@ -1,0 +1,81 @@
+:root {
+  --primary-color: #ff9d24;
+  --extra-color: #9981ff;
+  --sub-text-color: #7d7474;
+  --shadow-color: #e9e8f5;
+  --header-height: 70px;
+  --vertical-nav-width: 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+.common-icon {
+  color: var(--primary-color);
+  font-size: 25px;
+}
+
+.input-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.common-input {
+  height: 42px;
+  min-width: 140px;
+  padding: 8px 16px;
+  border: 1px solid var(--primary-color);
+  border-radius: 9.8px;
+  outline: none;
+  font-size: 1.4rem;
+}
+
+.common-input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--extra-color);
+  opacity: 1; /* Firefox */
+}
+
+.extra-style-btn,
+.primary-style-btn {
+  --btn-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  padding: 0 8px;
+  min-width: 140px;
+  height: var(--btn-height);
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+.primary-style-btn {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.extra-style-btn {
+  background-color: #fff;
+  color: var(--extra-color);
+  border: 1px solid var(--primary-color);
+}
+
+.primary-style-btn .common-icon {
+  color: inherit;
+}

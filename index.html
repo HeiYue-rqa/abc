@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Homestay</title>
+    <link
+      rel="stylesheet"
+      href="./assets/icon/Iconly v2.3 _ Other Formats/5 - Icon font/dist/css/style.css"
+    />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script>
+      $(function () {
+        $("#startdate").datepicker({
+          dateFormat: "yy-mm-dd",
+          minDate: 0,
+          onClose: function () {
+            $("#enddate").datepicker("change", {
+              minDate: new Date($("#startdate").val()),
+            });
+          },
+        });
+        $("#sdate").click(function () {
+          $("#startdate").focus();
+        });
+
+        $("#enddate").datepicker({
+          dateFormat: "yy-mm-dd",
+          minDate: 0,
+          onClose: function () {
+            $("#startdate").datepicker("change", {
+              maxDate: new Date($("#enddate").val()),
+            });
+          },
+        });
+        $("#edate").click(function () {
+          $("#enddate").focus();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="grid">
+        <nav class="header__item-wrap">
+          <div class="header__logo">
+            <span class="header__logo-p">Travel</span>
+            <span class="header__logo-e">AAP</span>
+          </div>
+          <ul class="header__nav">
+            <li class="header__nav-item">
+              <a href="" class="extra-style-btn header__nav-btn"
+                >Cho thuê phòng</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a href="" class="primary-style-btn header__nav-btn">Đăng nhập</a>
+            </li>
+          </ul>
+          <ul class="header__nav--signed-in"></ul>
+          <ul class="header__mobinav"></ul>
+          <ul class="header__mobinav--signed-in"></ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="grid">
+        <ul class="vertical-nav">
+          <li class="vertical-nav__item">
+            <a href="" class="vertical-nav__link">
+              <i class="iconly-Home icli common-icon"></i>
+              <div class="vertical-nav__desc">Nhà</div>
+            </a>
+          </li>
+          <li class="vertical-nav__item">
+            <a href="" class="vertical-nav__link">
+              <i class="iconly-Discovery icli common-icon"></i>
+              <div class="vertical-nav__desc">Khám phá</div>
+            </a>
+          </li>
+          <li class="vertical-nav__item">
+            <a href="" class="vertical-nav__link">
+              <i class="iconly-Send icli common-icon"></i>
+              <div class="vertical-nav__desc">Chia sẻ</div>
+            </a>
+          </li>
+          <li class="vertical-nav__item">
+            <a href="" class="vertical-nav__link">
+              <i class="iconly-Ticket icli common-icon"></i>
+              <div class="vertical-nav__desc">Di chuyển</div>
+            </a>
+          </li>
+          <li class="vertical-nav__item">
+            <a href="" class="vertical-nav__link">
+              <i class="iconly-Info-Circle icli common-icon"></i>
+              <div class="vertical-nav__desc">Hỗ trợ</div>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Begin: content -->
+
+        <div class="content">
+          <div class="grid">
+            <div class="content__slider">
+              <div
+                class="content__slide"
+                style="
+                  background: no-repeat url(./assets/img/chung/banner-1.jpg)
+                    bottom 15% center / cover;
+                "
+              ></div>
+              <div class="content__search">
+                <div class="input-wrap">
+                  <input
+                    class="common-input search-f"
+                    type="text"
+                    placeholder="Bạn muốn đi đâu?"
+                  />
+                  <i class="iconly-Location icli common-icon input-icon"></i>
+                </div>
+                <div class="search-2inline">
+                  <div class="input-wrap search-h-input">
+                    <input
+                      id="startdate"
+                      class="common-input"
+                      type="text"
+                      placeholder="Ngày đến"
+                      size="10"
+                    />
+                    <i
+                      id="sdate"
+                      class="iconly-Calendar icli common-icon input-icon"
+                    ></i>
+                  </div>
+                  <div class="input-wrap search-h-input">
+                    <input
+                      id="enddate"
+                      class="common-input"
+                      type="text"
+                      placeholder="Ngày đi"
+                      size="10"
+                    />
+                    <i
+                      id="edate"
+                      class="iconly-Calendar icli common-icon input-icon"
+                    ></i>
+                  </div>
+                </div>
+                <div class="input-wrap">
+                  <input
+                    class="common-input search-f"
+                    type="text"
+                    placeholder="Số khách"
+                  />
+                  <i class="iconly-Add-User icli common-icon input-icon"></i>
+                </div>
+
+                <div class="primary-style-btn search-f search__btn">
+                  <span>Tìm phòng</span>
+                  <i class="iconly-Search icli common-icon search__icon"></i>
+                </div>
+              </div>
+            </div>
+            <div class="content__discover">
+              <div class="content__header">
+                <div class="content__title">Khám phá</div>
+                <div class="content__desc">
+                  Các điểm đến phổ biến đang chờ đón bạn
+                </div>
+              </div>
+            </div>
+            <div class="content__community">
+              <div class="content__header">
+                <div class="content__title"></div>
+                <div class="content__desc"></div>
+              </div>
+            </div>
+            <div class="content__transport">
+              <div class="content__header">
+                <div class="content__title"></div>
+                <div class="content__desc"></div>
+              </div>
+            </div>
+            <div class="content__support">
+              <div class="content__header">
+                <div class="content__title"></div>
+                <div class="content__desc"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer"></div>
+  </body>
+</html>
