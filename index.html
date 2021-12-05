@@ -10,46 +10,17 @@
       href="./assets/icon/Iconly v2.3 _ Other Formats/5 - Icon font/dist/css/style.css"
     />
     <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
 
+    <script src="./assets/js/jquery-3.6.0.js"></script>
     <link
       rel="stylesheet"
-      href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css"
+      href="https://code.jquery.com/ui/1.13.0/themes/start/jquery-ui.css"
     />
-    <link rel="stylesheet" href="/resources/demos/style.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
-    <script>
-      $(function () {
-        $("#startdate").datepicker({
-          dateFormat: "yy-mm-dd",
-          minDate: 0,
-          onClose: function () {
-            $("#enddate").datepicker("change", {
-              minDate: new Date($("#startdate").val()),
-            });
-          },
-        });
-        $("#sdate").click(function () {
-          $("#startdate").focus();
-        });
-
-        $("#enddate").datepicker({
-          dateFormat: "yy-mm-dd",
-          minDate: 0,
-          onClose: function () {
-            $("#startdate").datepicker("change", {
-              maxDate: new Date($("#enddate").val()),
-            });
-          },
-        });
-        $("#edate").click(function () {
-          $("#enddate").focus();
-        });
-      });
-    </script>
   </head>
   <body>
     <div class="header">
@@ -116,13 +87,51 @@
         <div class="content">
           <div class="grid">
             <div class="content__slider">
-              <div
-                class="content__slide"
-                style="
-                  background: no-repeat url(./assets/img/chung/banner-1.jpg)
-                    bottom 15% center / cover;
-                "
-              ></div>
+              <div class="swiper swiper-banner">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div
+                      class="slide__img"
+                      style="
+                        background: no-repeat
+                          url(./assets/img/chung/banner-1.jpg) bottom 15% center /
+                          cover;
+                      "
+                    ></div>
+                  </div>
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div
+                      class="slide__img"
+                      style="
+                        background: no-repeat url(./assets/img/chung/1.jpg)
+                          bottom 15% center / cover;
+                      "
+                    ></div>
+                  </div>
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div
+                      class="slide__img"
+                      style="
+                        background: no-repeat url(./assets/img/chung/1.jpg)
+                          bottom 15% center / cover;
+                      "
+                    ></div>
+                  </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+              </div>
               <div class="content__search">
                 <div class="input-wrap">
                   <input
@@ -163,8 +172,10 @@
                 <div class="input-wrap">
                   <input
                     class="common-input search-f"
-                    type="text"
+                    type="number"
                     placeholder="Số khách"
+                    max="10"
+                    min="1"
                   />
                   <i class="iconly-Add-User icli common-icon input-icon"></i>
                 </div>
@@ -177,16 +188,236 @@
             </div>
             <div class="content__discover">
               <div class="content__header">
-                <div class="content__title">Khám phá</div>
+                <div class="content__title">Khám phá Việt Nam</div>
                 <div class="content__desc">
                   Các điểm đến phổ biến đang chờ đón bạn
                 </div>
               </div>
+              <div class="swiper swiper-card">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="card__img">
+                        <img
+                          src="./assets/img/Phòng/khu-nghi-duong-gan-sai-gon-20.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card__body">
+                        <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                        <div class="card-text">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Praesentium incidunt, consequatur at ducimus
+                          nesciunt rem.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="card__img">
+                        <img
+                          src="./assets/img/Phòng/khu-nghi-duong-gan-sai-gon-20.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card__body">
+                        <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                        <div class="card-text">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Praesentium incidunt, consequatur at ducimus
+                          nesciunt rem.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="card__img">
+                        <img
+                          src="./assets/img/Phòng/khu-nghi-duong-gan-sai-gon-20.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card__body">
+                        <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                        <div class="card-text">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Praesentium incidunt, consequatur at ducimus
+                          nesciunt rem.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="card__img">
+                        <img
+                          src="./assets/img/Phòng/khu-nghi-duong-gan-sai-gon-20.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card__body">
+                        <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                        <div class="card-text">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Praesentium incidunt, consequatur at ducimus
+                          nesciunt rem.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="card__img">
+                        <img
+                          src="./assets/img/Phòng/khu-nghi-duong-gan-sai-gon-20.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card__body">
+                        <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                        <div class="card-text">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Praesentium incidunt, consequatur at ducimus
+                          nesciunt rem.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+              </div>
             </div>
             <div class="content__community">
               <div class="content__header">
-                <div class="content__title"></div>
-                <div class="content__desc"></div>
+                <div class="content__title">Cộng đồng chia sẻ</div>
+                <div class="content__desc">
+                  Cùng đăng lên những trải nghiệm thú vị
+                </div>
+              </div>
+              <div class="swiper swiper-card">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="card__img">
+                        <img
+                          src="./assets/img/Phòng/khu-nghi-duong-gan-sai-gon-20.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card__body">
+                        <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                        <div class="card-text">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Praesentium incidunt, consequatur at ducimus
+                          nesciunt rem.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="card__img">
+                        <img
+                          src="./assets/img/Phòng/khu-nghi-duong-gan-sai-gon-20.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card__body">
+                        <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                        <div class="card-text">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Praesentium incidunt, consequatur at ducimus
+                          nesciunt rem.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="card__img">
+                        <img
+                          src="./assets/img/Phòng/khu-nghi-duong-gan-sai-gon-20.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card__body">
+                        <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                        <div class="card-text">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Praesentium incidunt, consequatur at ducimus
+                          nesciunt rem.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="card__img">
+                        <img
+                          src="./assets/img/Phòng/khu-nghi-duong-gan-sai-gon-20.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card__body">
+                        <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                        <div class="card-text">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Praesentium incidunt, consequatur at ducimus
+                          nesciunt rem.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="card__img">
+                        <img
+                          src="./assets/img/Phòng/khu-nghi-duong-gan-sai-gon-20.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="card__body">
+                        <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                        <div class="card-text">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Praesentium incidunt, consequatur at ducimus
+                          nesciunt rem.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
               </div>
             </div>
             <div class="content__transport">
@@ -206,5 +437,9 @@
       </div>
     </div>
     <div class="footer"></div>
+
+    <!-- link: js  -->
+    <script src="./assets/js/swiper.min.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
