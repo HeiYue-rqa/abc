@@ -47,396 +47,453 @@
       </div>
     </div>
 
+    <ul class="vertical-nav">
+      <li class="vertical-nav__item">
+        <a href="" class="vertical-nav__link">
+          <i class="iconly-Home icli common-icon"></i>
+          <div class="vertical-nav__desc">Nhà</div>
+        </a>
+      </li>
+      <li class="vertical-nav__item">
+        <a href="" class="vertical-nav__link">
+          <i class="iconly-Discovery icli common-icon"></i>
+          <div class="vertical-nav__desc">Khám phá</div>
+        </a>
+      </li>
+      <li class="vertical-nav__item">
+        <a href="" class="vertical-nav__link">
+          <i class="iconly-Send icli common-icon"></i>
+          <div class="vertical-nav__desc">Chia sẻ</div>
+        </a>
+      </li>
+      <li class="vertical-nav__item">
+        <a href="" class="vertical-nav__link">
+          <i class="iconly-Ticket icli common-icon"></i>
+          <div class="vertical-nav__desc">Di chuyển</div>
+        </a>
+      </li>
+      <li class="vertical-nav__item">
+        <a href="" class="vertical-nav__link">
+          <i class="iconly-Info-Circle icli common-icon"></i>
+          <div class="vertical-nav__desc">Hỗ trợ</div>
+        </a>
+      </li>
+    </ul>
+
     <div class="container">
       <div class="grid">
-        <ul class="vertical-nav">
-          <li class="vertical-nav__item">
-            <a href="" class="vertical-nav__link">
-              <i class="iconly-Home icli common-icon"></i>
-              <div class="vertical-nav__desc">Nhà</div>
-            </a>
-          </li>
-          <li class="vertical-nav__item">
-            <a href="" class="vertical-nav__link">
-              <i class="iconly-Discovery icli common-icon"></i>
-              <div class="vertical-nav__desc">Khám phá</div>
-            </a>
-          </li>
-          <li class="vertical-nav__item">
-            <a href="" class="vertical-nav__link">
-              <i class="iconly-Send icli common-icon"></i>
-              <div class="vertical-nav__desc">Chia sẻ</div>
-            </a>
-          </li>
-          <li class="vertical-nav__item">
-            <a href="" class="vertical-nav__link">
-              <i class="iconly-Ticket icli common-icon"></i>
-              <div class="vertical-nav__desc">Di chuyển</div>
-            </a>
-          </li>
-          <li class="vertical-nav__item">
-            <a href="" class="vertical-nav__link">
-              <i class="iconly-Info-Circle icli common-icon"></i>
-              <div class="vertical-nav__desc">Hỗ trợ</div>
-            </a>
-          </li>
-        </ul>
+        <div class="container__slider">
+          <div class="swiper swiper-banner">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div
+                  class="banner__img"
+                  style="
+                    background: no-repeat url(./assets/img/chung/banner-1.jpg)
+                      bottom 15% center / cover;
+                  "
+                ></div>
+              </div>
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div
+                  class="banner__img"
+                  style="
+                    background: no-repeat url(./assets/img/chung/1.jpg) bottom
+                      15% center / cover;
+                  "
+                ></div>
+              </div>
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div
+                  class="banner__img"
+                  style="
+                    background: no-repeat url(./assets/img/chung/1.jpg) bottom
+                      15% center / cover;
+                  "
+                ></div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
 
-        <!-- Begin: content -->
-
-        <div class="content">
-          <div class="grid">
-            <div class="content__slider">
-              <div class="swiper swiper-banner">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide">
-                    <div
-                      class="slide__img"
-                      style="
-                        background: no-repeat
-                          url(./assets/img/chung/banner-1.jpg) bottom 15% center /
-                          cover;
-                      "
-                    ></div>
-                  </div>
-                  <!-- Slides -->
-                  <div class="swiper-slide">
-                    <div
-                      class="slide__img"
-                      style="
-                        background: no-repeat url(./assets/img/chung/1.jpg)
-                          bottom 15% center / cover;
-                      "
-                    ></div>
-                  </div>
-                  <!-- Slides -->
-                  <div class="swiper-slide">
-                    <div
-                      class="slide__img"
-                      style="
-                        background: no-repeat url(./assets/img/chung/1.jpg)
-                          bottom 15% center / cover;
-                      "
-                    ></div>
-                  </div>
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
-                <!-- <div class="swiper-button-prev"></div>
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div> -->
 
-                <!-- If we need scrollbar -->
-                <!-- <div class="swiper-scrollbar"></div> -->
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+          </div>
+          <div class="container__search">
+            <div class="input-wrap">
+              <input
+                class="common-input search-f"
+                type="text"
+                placeholder="Bạn muốn đi đâu?"
+              />
+              <i class="iconly-Location icli common-icon input-icon"></i>
+            </div>
+            <div class="search-2inline">
+              <div class="input-wrap search-h-input">
+                <input
+                  id="startdate"
+                  class="common-input"
+                  type="text"
+                  placeholder="Ngày đến"
+                  size="10"
+                />
+                <i
+                  id="sdate"
+                  class="iconly-Calendar icli common-icon input-icon"
+                ></i>
               </div>
-              <div class="content__search">
-                <div class="input-wrap">
-                  <input
-                    class="common-input search-f"
-                    type="text"
-                    placeholder="Bạn muốn đi đâu?"
-                  />
-                  <i class="iconly-Location icli common-icon input-icon"></i>
-                </div>
-                <div class="search-2inline">
-                  <div class="input-wrap search-h-input">
-                    <input
-                      id="startdate"
-                      class="common-input"
-                      type="text"
-                      placeholder="Ngày đến"
-                      size="10"
+              <div class="input-wrap search-h-input">
+                <input
+                  id="enddate"
+                  class="common-input"
+                  type="text"
+                  placeholder="Ngày đi"
+                  size="10"
+                />
+                <i
+                  id="edate"
+                  class="iconly-Calendar icli common-icon input-icon"
+                ></i>
+              </div>
+            </div>
+            <div class="input-wrap">
+              <input
+                class="common-input search-f"
+                type="number"
+                placeholder="Số khách"
+                max="10"
+                min="1"
+              />
+              <i class="iconly-Add-User icli common-icon input-icon"></i>
+            </div>
+
+            <div class="primary-style-btn search-f search__btn">
+              <span>Tìm phòng</span>
+              <i class="iconly-Search icli common-icon search__icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="container__discover">
+          <div class="container__header">
+            <div class="container__title">Khám phá Việt Nam</div>
+            <div class="container__desc">
+              Các điểm đến phổ biến đang chờ đón bạn
+            </div>
+          </div>
+          <div class="swiper swiper-card">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card__img">
+                    <img
+                      src="./assets/img/Phòng/khu-nghi-duong-gan-sai-gon-20.jpg"
+                      alt=""
                     />
-                    <i
-                      id="sdate"
-                      class="iconly-Calendar icli common-icon input-icon"
-                    ></i>
                   </div>
-                  <div class="input-wrap search-h-input">
-                    <input
-                      id="enddate"
-                      class="common-input"
-                      type="text"
-                      placeholder="Ngày đi"
-                      size="10"
+                  <div class="card__body">
+                    <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                    <div class="card-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Praesentium incidunt, consequatur at ducimus nesciunt rem.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card__img">
+                    <img
+                      src="./assets/img/Phòng/khu-nghi-duong-gan-sai-gon-20.jpg"
+                      alt=""
                     />
-                    <i
-                      id="edate"
-                      class="iconly-Calendar icli common-icon input-icon"
-                    ></i>
+                  </div>
+                  <div class="card__body">
+                    <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                    <div class="card-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Praesentium incidunt, consequatur at ducimus nesciunt rem.
+                    </div>
                   </div>
                 </div>
-                <div class="input-wrap">
-                  <input
-                    class="common-input search-f"
-                    type="number"
-                    placeholder="Số khách"
-                    max="10"
-                    min="1"
-                  />
-                  <i class="iconly-Add-User icli common-icon input-icon"></i>
+              </div>
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card__img">
+                    <img
+                      src="./assets/img/Phòng/khu-nghi-duong-gan-sai-gon-20.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card__body">
+                    <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                    <div class="card-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Praesentium incidunt, consequatur at ducimus nesciunt rem.
+                    </div>
+                  </div>
                 </div>
-
-                <div class="primary-style-btn search-f search__btn">
-                  <span>Tìm phòng</span>
-                  <i class="iconly-Search icli common-icon search__icon"></i>
+              </div>
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card__img">
+                    <img
+                      src="./assets/img/Phòng/khu-nghi-duong-gan-sai-gon-20.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card__body">
+                    <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                    <div class="card-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Praesentium incidunt, consequatur at ducimus nesciunt rem.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card__img">
+                    <img
+                      src="./assets/img/Phòng/khu-nghi-duong-gan-sai-gon-20.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card__body">
+                    <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                    <div class="card-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Praesentium incidunt, consequatur at ducimus nesciunt rem.
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="content__discover">
-              <div class="content__header">
-                <div class="content__title">Khám phá Việt Nam</div>
-                <div class="content__desc">
-                  Các điểm đến phổ biến đang chờ đón bạn
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+          </div>
+        </div>
+        <div class="container__community">
+          <div class="container__header">
+            <div class="container__title">Cộng đồng chia sẻ</div>
+            <div class="container__desc">
+              Cùng đăng lên những trải nghiệm thú vị
+            </div>
+          </div>
+          <div class="swiper swiper-card">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card__img">
+                    <img
+                      src="./assets/img/Phòng/khu-nghi-duong-gan-sai-gon-20.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card__body">
+                    <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                    <div class="card-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Praesentium incidunt, consequatur at ducimus nesciunt rem.
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="swiper swiper-card">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide">
-                    <div class="card">
-                      <div class="card__img">
-                        <img
-                          src="./assets/img/Phòng/khu-nghi-duong-gan-sai-gon-20.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div class="card__body">
-                        <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                        <div class="card-text">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit. Praesentium incidunt, consequatur at ducimus
-                          nesciunt rem.
-                        </div>
-                      </div>
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card__img">
+                    <img
+                      src="./assets/img/Phòng/khu-nghi-duong-gan-sai-gon-20.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card__body">
+                    <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                    <div class="card-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Praesentium incidunt, consequatur at ducimus nesciunt rem.
                     </div>
                   </div>
-                  <!-- Slides -->
-                  <div class="swiper-slide">
-                    <div class="card">
-                      <div class="card__img">
-                        <img
-                          src="./assets/img/Phòng/khu-nghi-duong-gan-sai-gon-20.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div class="card__body">
-                        <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                        <div class="card-text">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit. Praesentium incidunt, consequatur at ducimus
-                          nesciunt rem.
-                        </div>
-                      </div>
+                </div>
+              </div>
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card__img">
+                    <img
+                      src="./assets/img/Phòng/khu-nghi-duong-gan-sai-gon-20.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card__body">
+                    <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                    <div class="card-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Praesentium incidunt, consequatur at ducimus nesciunt rem.
                     </div>
                   </div>
-                  <!-- Slides -->
-                  <div class="swiper-slide">
-                    <div class="card">
-                      <div class="card__img">
-                        <img
-                          src="./assets/img/Phòng/khu-nghi-duong-gan-sai-gon-20.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div class="card__body">
-                        <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                        <div class="card-text">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit. Praesentium incidunt, consequatur at ducimus
-                          nesciunt rem.
-                        </div>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card__img">
+                    <img
+                      src="./assets/img/Phòng/khu-nghi-duong-gan-sai-gon-20.jpg"
+                      alt=""
+                    />
                   </div>
-                  <!-- Slides -->
-                  <div class="swiper-slide">
-                    <div class="card">
-                      <div class="card__img">
-                        <img
-                          src="./assets/img/Phòng/khu-nghi-duong-gan-sai-gon-20.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div class="card__body">
-                        <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                        <div class="card-text">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit. Praesentium incidunt, consequatur at ducimus
-                          nesciunt rem.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Slides -->
-                  <div class="swiper-slide">
-                    <div class="card">
-                      <div class="card__img">
-                        <img
-                          src="./assets/img/Phòng/khu-nghi-duong-gan-sai-gon-20.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div class="card__body">
-                        <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                        <div class="card-text">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit. Praesentium incidunt, consequatur at ducimus
-                          nesciunt rem.
-                        </div>
-                      </div>
+                  <div class="card__body">
+                    <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                    <div class="card-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Praesentium incidunt, consequatur at ducimus nesciunt rem.
                     </div>
                   </div>
                 </div>
-                <!-- If we need pagination -->
-                <!-- <div class="swiper-pagination"></div> -->
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-                <!-- If we need scrollbar -->
-                <!-- <div class="swiper-scrollbar"></div> -->
+              </div>
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card__img">
+                    <img
+                      src="./assets/img/Phòng/khu-nghi-duong-gan-sai-gon-20.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card__body">
+                    <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                    <div class="card-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Praesentium incidunt, consequatur at ducimus nesciunt rem.
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="content__community">
-              <div class="content__header">
-                <div class="content__title">Cộng đồng chia sẻ</div>
-                <div class="content__desc">
-                  Cùng đăng lên những trải nghiệm thú vị
-                </div>
-              </div>
-              <div class="swiper swiper-card">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide">
-                    <div class="card">
-                      <div class="card__img">
-                        <img
-                          src="./assets/img/Phòng/khu-nghi-duong-gan-sai-gon-20.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div class="card__body">
-                        <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                        <div class="card-text">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit. Praesentium incidunt, consequatur at ducimus
-                          nesciunt rem.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Slides -->
-                  <div class="swiper-slide">
-                    <div class="card">
-                      <div class="card__img">
-                        <img
-                          src="./assets/img/Phòng/khu-nghi-duong-gan-sai-gon-20.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div class="card__body">
-                        <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                        <div class="card-text">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit. Praesentium incidunt, consequatur at ducimus
-                          nesciunt rem.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Slides -->
-                  <div class="swiper-slide">
-                    <div class="card">
-                      <div class="card__img">
-                        <img
-                          src="./assets/img/Phòng/khu-nghi-duong-gan-sai-gon-20.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div class="card__body">
-                        <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                        <div class="card-text">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit. Praesentium incidunt, consequatur at ducimus
-                          nesciunt rem.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Slides -->
-                  <div class="swiper-slide">
-                    <div class="card">
-                      <div class="card__img">
-                        <img
-                          src="./assets/img/Phòng/khu-nghi-duong-gan-sai-gon-20.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div class="card__body">
-                        <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                        <div class="card-text">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit. Praesentium incidunt, consequatur at ducimus
-                          nesciunt rem.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Slides -->
-                  <div class="swiper-slide">
-                    <div class="card">
-                      <div class="card__img">
-                        <img
-                          src="./assets/img/Phòng/khu-nghi-duong-gan-sai-gon-20.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div class="card__body">
-                        <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                        <div class="card-text">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit. Praesentium incidunt, consequatur at ducimus
-                          nesciunt rem.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- If we need pagination -->
-                <!-- <div class="swiper-pagination"></div> -->
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
 
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
 
-                <!-- If we need scrollbar -->
-                <!-- <div class="swiper-scrollbar"></div> -->
-              </div>
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+          </div>
+        </div>
+        <div class="container__transport">
+          <div class="container__header">
+            <div class="container__title"></div>
+            <div class="container__desc"></div>
+          </div>
+        </div>
+        <div class="container__support">
+          <div class="container__header">
+            <div class="container__title"></div>
+            <div class="container__desc"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="grid">
+        <div class="row">
+          <div class="l-3 m-6 c-12">
+            <div class="card-body">
+              <h4 class="card-title">About</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+                enim officiis quas beatae molestiae, nisi porro quia numquam
+                sint, officia vel amet quos. Nemo quasi repellat cupiditate!
+                Vero, nobis exercitationem.
+              </p>
+              <a href="#" class="btn btn-sm btn-outline-primary"
+                >More About Us</a
+              >
             </div>
-            <div class="content__transport">
-              <div class="content__header">
-                <div class="content__title"></div>
-                <div class="content__desc"></div>
-              </div>
+          </div>
+          <div class="l-3 m-6 c-12">
+            <div class="card-body">
+              <h4 class="card-title">Services</h4>
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <ul>
+                <li><a href="#">User Interface & Experience</a></li>
+                <li><a href="#">Website Development</a></li>
+                <li><a href="#">Search Engine Optimization</a></li>
+              </ul>
+              <a href="" class="btn btn-sm btn-outline-success">Let's Talk</a>
             </div>
-            <div class="content__support">
-              <div class="content__header">
-                <div class="content__title"></div>
-                <div class="content__desc"></div>
-              </div>
+          </div>
+          <div class="l-3 m-6 c-12">
+            <div class="card-body">
+              <h4 class="card-title">Latest Posts</h4>
+              <ul>
+                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                <li>
+                  <a href="">Necessitatibus, cumque? Laborum, at iusto.</a>
+                </li>
+                <li><a href="#">Minus nam natus pariatur cupiditate!</a></li>
+                <li><a href="#">Optio et deserunt maxime maiores.</a></li>
+                <li><a href="#">Quia sit repudiandae aperiam numquam.</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="l-3 m-6 c-12">
+            <div class="card-body">
+              <h4 class="card-title">Address</h4>
+              <p class="card-text">Beverly Hills 5150, CA 90210</p>
+              <p class="card-text">Visit and connect with social media:</p>
+              <ul class="social-media list-inline fs-5">
+                <li class="list-inline-item">
+                  <a href="#"
+                    ><i class="bi-facebook"></i><span> Facebook</span></a
+                  >
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="bi-twitter"></i><span>Twitter</span></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"
+                    ><i class="bi-instagram"></i><span>Instagram</span></a
+                  >
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"
+                    ><i class="bi-pinterest"></i><span>Pinterest</span></a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="footer"></div>
 
     <!-- link: js  -->
     <script src="./assets/js/swiper.min.js"></script>
