@@ -1,0 +1,12 @@
+@media (max-width: 740px) {
+  .vertical-nav,
+  .header__nav {
+    display: none;
+  }
+
+  .container,
+  .footer {
+    margin-left: 0;
+    width: 100%;
+  }
+}

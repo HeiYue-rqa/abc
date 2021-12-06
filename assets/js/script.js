@@ -43,8 +43,8 @@
 const swiper = new Swiper('.swiper-card', {
     // Optional parameters
     direction: 'horizontal',
-    slidesPerView: 3.45,
-    spaceBetween: 30,
+    slidesPerView: "auto",
+    spaceBetween: 0,
     loop: true,
   
     // If we need pagination
